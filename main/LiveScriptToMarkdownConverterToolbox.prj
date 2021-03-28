@@ -1,5 +1,5 @@
 <deployment-project plugin="plugin.toolbox" plugin-version="1.0">
-  <configuration file="D:\MATLAB\LiveScriptToMarkdown\main\LiveScriptToMarkdownConverterToolbox.prj" location="D:\MATLAB\LiveScriptToMarkdown\main" name="LiveScriptToMarkdownConverterToolbox" target="target.toolbox" target-name="Package Toolbox">
+  <configuration file="D:\MATLAB\Live-Script-to-Markdown-Converter\main\LiveScriptToMarkdownConverterToolbox.prj" location="D:\MATLAB\Live-Script-to-Markdown-Converter\main" name="LiveScriptToMarkdownConverterToolbox" target="target.toolbox" target-name="Package Toolbox">
     <param.appname>Live Script To Markdown Converter</param.appname>
     <param.authnamewatermark>Pavel Roslovets</param.authnamewatermark>
     <param.email />
@@ -92,7 +92,7 @@ installer</param.exclude.filters>
     <fileset.depfun.excluded />
     <fileset.package />
     <build-deliverables>
-      <file location="${PROJECT_ROOT}" name="Live Script To Markdown Converter.mltbx" optional="false">D:\MATLAB\LiveScriptToMarkdown\main\Live Script To Markdown Converter.mltbx</file>
+      <file location="${PROJECT_ROOT}" name="Live Script To Markdown Converter.mltbx" optional="false">D:\MATLAB\Live-Script-to-Markdown-Converter\main\Live Script To Markdown Converter.mltbx</file>
     </build-deliverables>
     <workflow />
     <matlab>

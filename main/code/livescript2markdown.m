@@ -105,7 +105,7 @@ if opts.AddMention
     [~, mlxFileName, mlxFileExt] = fileparts(mlxFilePath);
     txt = string(txt) + newline + newline +...
         sprintf("***\n*Generated from %s with [Live Script to Markdown Converter](%s)*",...
-        string(mlxFileName) + mlxFileExt, 'https://github.com/roslovets/livescript2markdown');
+        string(mlxFileName) + mlxFileExt, 'https://github.com/roslovets/Live-Script-to-Markdown-Converter');
 end
 % Write processed text back to the output file
 writematrix(char(txt), mdFileAbsPath, 'FileType', 'text', 'QuoteStrings', false);

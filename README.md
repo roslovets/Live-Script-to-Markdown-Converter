@@ -6,11 +6,11 @@ This toolbox provides a function `livescript2markdown` that allows you to conver
 # Requirements
 
    -  MATLAB R2020b or later 
-   -  [livescript2markdown: MATLAB's live scripts to markdown](https://www.mathworks.com/matlabcentral/fileexchange/73993) (will be installed automatically with toolbox) 
+   -  [livescript2markdown: MATLAB's live scripts to markdown](https://www.mathworks.com/matlabcentral/fileexchange/73993) addon (will be installed automatically with toolbox) 
 
 # How to install
 
-Download **LiveScriptToMarkdownConverter.mltbx** from the [latest release](https://github.com/roslovets/livescript2markdown/releases/latest) and open it in MATLAB.
+Download **Live.Script.To.Markdown.Converter.mltbx** from the [latest release](https://github.com/roslovets/livescript2markdown/releases/latest) and open it in MATLAB.
 
 # How to use
 
@@ -67,4 +67,4 @@ livescript2markdown('main/doc/GettingStarted.mlx', 'README.md', 'AddMention', tr
 Give a star if this project helped you.
 
 ***
-*Generated from GettingStarted.mlx with [Live Script to Markdown Converter](https://github.com/roslovets/livescript2markdown)*
+*Generated from GettingStarted.mlx with [Live Script to Markdown Converter](https://github.com/roslovets/Live-Script-to-Markdown-Converter)*

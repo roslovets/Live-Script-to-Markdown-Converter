@@ -8,6 +8,6 @@ tbxProj = fullfile(proj.RootFolder, 'main/LiveScriptToMarkdownConverterToolbox.p
 if ~isempty(v)
     matlab.addons.toolbox.toolboxVersion(tbxProj, v);
 end
-tbxFileName = erase(sprintf('%s.mltbx', proj.Name), ' ');
+tbxFileName = replace(sprintf('%s.mltbx', proj.Name), ' ', '.');
 tbxFilePath = fullfile(proj.RootFolder, tbxFileName);
 matlab.addons.toolbox.packageToolbox(tbxProj, tbxFilePath);
