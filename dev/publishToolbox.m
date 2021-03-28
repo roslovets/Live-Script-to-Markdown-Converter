@@ -11,6 +11,9 @@ tbxProj = fullfile(proj.RootFolder, 'main/LiveScriptToMarkdownConverterToolbox.p
 if isempty(v)
     vCurrent = matlab.addons.toolbox.toolboxVersion(tbxProj);
     v = input(sprintf('<strong>Enter release version (%s): </strong>', vCurrent), 's');
+    if isempty(v)
+        v = vCurrent;
+    end
 end
 % Create toolbox
 mltbxFile = packToolbox(v);
