@@ -2,8 +2,8 @@
   <configuration file="D:\MATLAB\Live-Script-to-Markdown-Converter\main\LiveScriptToMarkdownConverterToolbox.prj" location="D:\MATLAB\Live-Script-to-Markdown-Converter\main" name="LiveScriptToMarkdownConverterToolbox" target="target.toolbox" target-name="Package Toolbox">
     <param.appname>Live Script To Markdown Converter</param.appname>
     <param.authnamewatermark>Pavel Roslovets</param.authnamewatermark>
-    <param.email />
-    <param.company />
+    <param.email>p.v.roslovets@gmail.com</param.email>
+    <param.company>https://roslovets.github.io</param.company>
     <param.summary>Easily convert live scripts to markdown files</param.summary>
     <param.description />
     <param.screenshot>${PROJECT_ROOT}\img\LiveScriptToMarkdownConverter-cover.png</param.screenshot>
@@ -26,6 +26,7 @@ img</param.exclude.filters>
     <param.getting.started.guide>${PROJECT_ROOT}\doc\GettingStarted.mlx</param.getting.started.guide>
     <param.matlabpath.excludes>
       <item>/dev</item>
+      <item>/installer</item>
     </param.matlabpath.excludes>
     <param.javaclasspath.excludes />
     <param.exported.on.package>false</param.exported.on.package>
@@ -50,8 +51,6 @@ img</param.exclude.filters>
     <param.additional.sw.mac.url />
     <param.additional.sw.linux.url />
     <unset>
-      <param.email />
-      <param.company />
       <param.description />
       <param.output />
       <param.products.name />

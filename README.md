@@ -9,8 +9,21 @@ This toolbox provides a function `livescript2markdown` that allows you to conver
    -  [livescript2markdown: MATLAB's live scripts to markdown](https://www.mathworks.com/matlabcentral/fileexchange/73993) addon (will be installed automatically with toolbox) 
 
 # How to install
+## Approach 1 (easy and fast)
+
+Execute in MATLAB:
+
+```matlab:Code(Display)
+eval(webread('https://git.io/JYcyl'))
+```
+
+## Approach 2 (traditional)
 
 Download **Live.Script.To.Markdown.Converter.mltbx** from the [latest release](https://github.com/roslovets/livescript2markdown/releases/latest) and open it in MATLAB.
+
+## Approach 3 (boring)
+
+Use **Add-Ons Explorer** in MATLAB to find and install **Live Script To Markdown Converter**.
 
 # How to use
 
@@ -61,6 +74,12 @@ Convert documentation of this toolbox into README.md file
 ```matlab:Code(Display)
 livescript2markdown('main/doc/GettingStarted.mlx', 'README.md', 'AddMention', true);
 ```
+
+# Links
+
+   -  [GitHub repository](https://github.com/roslovets/Live-Script-to-Markdown-Converter) 
+   -  [File Exchange page](https://www.mathworks.com/matlabcentral/fileexchange/89516) 
+   -  [More interesting projects](https://roslovets.github.io) 
 
 # ⭐Show your support
 
