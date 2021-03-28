@@ -15,7 +15,8 @@
     <param.platforms />
     <param.guid>c5ce6999-1e66-4758-81ee-567db8689a9b</param.guid>
     <param.exclude.filters>*.asv
-installer</param.exclude.filters>
+installer
+img</param.exclude.filters>
     <param.exclude.pcodedmfiles>true</param.exclude.pcodedmfiles>
     <param.examples />
     <param.demosxml />
@@ -85,7 +86,6 @@ installer</param.exclude.filters>
     <fileset.rootfiles>
       <file>${PROJECT_ROOT}\code</file>
       <file>${PROJECT_ROOT}\doc</file>
-      <file>${PROJECT_ROOT}\img</file>
     </fileset.rootfiles>
     <fileset.depfun.included />
     <fileset.depfun.excluded />
