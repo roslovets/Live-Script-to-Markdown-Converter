@@ -3,10 +3,11 @@ function publishToolbox(v)
 arguments
     v (1,:) char = '' % Release version
 end
+proj = currentProject();
+cd(proj.RootFolder);
 % Gnerate documentation
 genDoc();
 % Set version
-proj = currentProject();
 tbxProj = fullfile(proj.RootFolder, 'main/LiveScriptToMarkdownConverterToolbox.prj');
 if isempty(v)
     vCurrent = matlab.addons.toolbox.toolboxVersion(tbxProj);
