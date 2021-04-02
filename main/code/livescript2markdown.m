@@ -89,7 +89,7 @@ txt = strtrim(txt);
 % Process text
 if opts.FixLinks
     % Convert file links to suitable markdown format
-    txt = replace(txt, "[matlab:" + ["open" "winopen" "cd"] + " ", '[');
+    txt = replace(txt, "](matlab:" + ["open" "winopen" "cd"] + " ", "](");
 end
 if opts.NormalizeLines
     % Remove extra empty lines in output file
