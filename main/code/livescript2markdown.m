@@ -2,22 +2,22 @@ function mdFileAbsPath = livescript2markdown(mlxFilePath, mdFilePath, opts)
 %% Automatically convert Live Script mlx-file to markdown md-file
 % By Pavel Roslovets, https://roslovets.github.io
 % This function uses "latex2markdown" function from "MATLAB's live scripts to markdown" addon
-% Alse it uses undocumented "matlab.internal.liveeditor.openAndConvert" function
+% Also it uses undocumented "matlab.internal.liveeditor.openAndConvert" function
 arguments
-    mlxFilePath (1,:) char {mustBeFile} % Path to the input live script file
-    mdFilePath (1,:) char = '' % path to the output markdown text file
-    opts.Format char {mustBeMember(opts.Format,{'qiita','github'})} = 'github' % Markdown file format
-    opts.Png2jpeg logical = false % Convert PNG images to JPEG images to compress
+    mlxFilePath (1,1) string {mustBeFile} % Path to the input live script file
+    mdFilePath (1,1) string = "" % path to the output markdown text file
+    opts.Format (1,1) string {mustBeMember(opts.Format,["github","qiita"])} = "github" % Markdown file format
+    opts.Png2jpeg (1,1) logical = false % Convert PNG images to JPEG images to compress
     opts.TableMaxWidth (1,1) double = 20 % Max witdh of table in markdown
-    opts.FixLinks logical = true % Fix MATLAB special links
-    opts.NormalizeLines logical = true % Remove extra empty lines
-    opts.AddMention logical = false % Add toolbox mention
+    opts.FixLinks (1,1) logical = true % Fix MATLAB special links
+    opts.NormalizeLines (1,1) logical = true % Remove extra empty lines
+    opts.AddMention (1,1) logical = false % Add toolbox mention
 end
 
-if isempty(mdFilePath)
+if mdFilePath == ""
     % If no result file specified
     % Generate file to current folder
-    mdFileFolder = pwd;
+    mdFileFolder = string(pwd);
     % Get file name from source file
     [~, mdFileName, ~] = fileparts(mlxFilePath);
 else
@@ -28,8 +28,8 @@ else
         error('Markdown file should have .md extension');
     end
     % Select result file folder
-    if isempty(mdFileFolder)
-        mdFileFolder = pwd;
+    if mdFileFolder == ""
+        mdFileFolder = string(pwd);
     end
 end
 
@@ -115,7 +115,7 @@ end
 function absPath = getAbsPath(relPath)
 %% Convert relative path to absolute
 arguments
-    relPath (1,:) char
+    relPath (1,1) string
 end
 if ~isfile(relPath) && ~isfolder(relPath)
     error('No such file or folder: %s', relPath);
