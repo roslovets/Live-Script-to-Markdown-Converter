@@ -17,13 +17,13 @@ Execute in MATLAB:
 eval(webread('https://git.io/JYcyl'))
 ```
 
-## Approach 2 (traditional)
-
-Download **Live.Script.To.Markdown.Converter.mltbx** from the [latest release](https://github.com/roslovets/livescript2markdown/releases/latest) and open it in MATLAB.
-
-## Approach 3 (boring)
+## Approach 2 (manual)
 
 Use **Add-Ons Explorer** in MATLAB to find and install **Live Script To Markdown Converter**.
+
+## Approach 3 (offline)
+
+Download **Live.Script.To.Markdown.Converter.mltbx** from the [latest release](https://github.com/roslovets/Live-Script-to-Markdown-Converter/releases) and open it in MATLAB.
 
 # How to use
 
@@ -57,11 +57,11 @@ Use `livescript2markdown` function to convert mlx-script to md-file.
 ### **Input Name-Value Pair Arguments**
 
    -  `'Format'`: It can be `'github'` (default) or `'qiita'.` Markdown file format 
-   -  `'Png2jpeg'`: It can be `'false'` (default) or `'true'`. Enable to convert PNG images to JPEG images to compress 
+   -  `'Png2jpeg'`: It can be `false` (default) or `true`. Enable to convert PNG images to JPEG images to compress 
    -  `'TableMaxWidth'`: max witdh of table in markdown (default: `20`) 
-   -  `'FixLinks'`: convert file links with `open`, `winopen`, `cd` into suitable markdown format.  It can be `'true'` (default) or `'false'` 
-   -  `'NormalizeLines'`: remove extra empty lines in generated file.  It can be `'true'` (default) or `'false'` 
-   -  `'AddMention'`: mention this toolbox at the end of generated file.  It can be `'false'` (default) or `'true'` 
+   -  `'FixLinks'`: convert file links with `open`, `winopen`, `cd` into suitable markdown format.  It can be `true` (default) or `false` 
+   -  `'NormalizeLines'`: remove extra empty lines in generated file.  It can be `true` (default) or `false` 
+   -  `'AddMention'`: mention this toolbox at the end of generated file.  It can be `false` (default) or `true` 
 
 ## Output arguments
 
