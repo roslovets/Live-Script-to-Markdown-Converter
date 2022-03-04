@@ -62,6 +62,8 @@ Use `livescript2markdown` function to convert mlx-script to md-file.
    -  `'FixLinks'`: convert file links with `open`, `winopen`, `cd` into suitable markdown format.  It can be `true` (default) or `false` 
    -  `'NormalizeLines'`: remove extra empty lines in generated file.  It can be `true` (default) or `false` 
    -  `'AddMention'`: mention this toolbox at the end of generated file.  It can be `false` (default) or `true` 
+   -  `'ToC'`: add a table of contents at the beginning of generated file.  It can be `false` (default) or `true` 
+
 
 ## Output arguments
 
