@@ -12,6 +12,7 @@ arguments
     opts.FixLinks (1,1) logical = true % Fix MATLAB special links
     opts.NormalizeLines (1,1) logical = true % Remove extra empty lines
     opts.AddMention (1,1) logical = false % Add toolbox mention
+    opts.ToC (1,1) logical = false % Add a table of content
 end
 
 if mdFilePath == ""
@@ -60,7 +61,8 @@ prevWorkFolder = cd(workFolder);
 
 % Prepare latex to markdown conversion parameters
 argOpts = struct('outputfilename', mdFileName, 'format', opts.Format, ...
-    'png2jpeg', opts.Png2jpeg, 'tableMaxWidth', opts.TableMaxWidth);
+    'png2jpeg', opts.Png2jpeg, 'tableMaxWidth', opts.TableMaxWidth, ...
+    'ToC', opts.ToC);
 args = namedargs2cell(argOpts);
 % Call latex2markdown function (convert latex to markdown)
 mdFileNameExt = latex2markdown(latexFileAbsPath, args{:});
